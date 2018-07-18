@@ -1,6 +1,5 @@
-%% FUNCTION TO FIND COEEFICIENTS OF A POLYNOMIAL of form $$ \prod\limits_{j=1}^{n} (\lambda - x) $$ USING FFT 
+%% FUNCTION TO FIND COEEFICIENTS OF A POLYNOMIAL of form $$ \prod\limits_{j=1}^{n} (\lambda - x) $$ USING FFT %% 
 
-%% 
 function p1 = s_FFTCoeff(lambda)
 x = sym('x');
 p1 = (lambda(1) - x);
