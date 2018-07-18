@@ -1,19 +1,5 @@
 %% FUNCTION TO FIND COEEFICIENTS OF A POLYNOMIAL of form $$ \prod\limits_{j=1}^{n} (\lambda - x) $$ USING FFT 
 
-%Any number greater than the degree of polynomial is called its degree
-%bound for example for  a polynomial of degree 2 the degree bound is
-%3,4,5.. i.e anything > 2. When we mulyiply two polynomial of degree bound
-%n each the resultant polynomial is of degree bound n+n = 2n. Thus while
-%finding coeff of resultant polynomial of the polynomial multiplication we
-%append zeros to the coeff representation of polynomials to make the vector
-%length 2n. For example if p1 = (x-1) and p2 = (x-2) [1,-2] then their 
-%coeff represenattion is p1 = [1,-1] and [1,-2](H to L) with degree bound 2 
-%and 2 resp. p3 = p1 * p2 = x^2 - 3*x +2. i.e [1,-3,2] and db=3,4..
-% So for FFT make db of p1 = 2n = 2*2 = 4. so p1 = [1,-1,0,0] and 
-% p2 = [1,-2,0,0] the resultant polynomial will have degree bound n+n = 2n and
-% degree n+n-1. So if we multiply the polynomial of degree 3 and degree 2
-% the resultant polynomial will be of degree 3+2-1 = 4 and degree bound 3+2=5. 
-
 %% 
 function p1 = s_FFTCoeff(lambda)
 x = sym('x');
