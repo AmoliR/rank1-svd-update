@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AmoliR/rank1-svd-update/blob/master/LICENSE) 
 # Rank-1 Singular Value Decomposition Updating Algorithm
 This MATLAB library implements algorithm for updating Singular Value Decomposition (SVD) for rank-1 perturbed matrix using Fast Multipole Method (FMM) in ![Equation](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbg_black%20O%28n%5E2%20%5C%20%5Ctext%7Blog%7D%28%5Cfrac%7B1%7D%7B%5Cepsilon%7D%29%29)  time, where ![Equation](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbg_black%20%5Cepsilon) is the precision of computation. Detailed explaination of the algorithm can be found in this [paper](https://arxiv.org/abs/1707.08369).
 ## Running the tests
